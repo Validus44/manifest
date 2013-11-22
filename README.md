@@ -1,5 +1,5 @@
-BeerKit
-Getting Started
+Validus44
+===========================
 
 To get started with Validus44, you'll need to get familiar with Git and Repo.
 
