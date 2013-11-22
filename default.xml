@@ -296,7 +296,7 @@
     <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
     <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
     <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-    <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
+    <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-11.0" />
     <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="ls" revision="kitkat" />
     <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
     <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
