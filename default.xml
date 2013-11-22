@@ -3,15 +3,27 @@
     
     <remote  name="aosp"
     fetch="https://android-review.googlesource.com/" />
+    
     <remote name="BeerGang"
     fetch="git://github.com/BeerGang/" />
+    
     <remote name="CyanogenMod"
     fetch="git://github.com/CyanogenMod/" />
+    
+    <remote name="v44"
+    fetch="git://github.com/Validus44/" />
+    
+    <remote name="ls"
+          fetch="git://github.com/LiquidSmooth/" />
+    
+    <remote name="tm"
+    fetch="git://github.com/TheMuppets/" />
+    
     <default revision="refs/tags/android-4.4_r1.2"
     remote="aosp"
     sync-j="4" />
     
-    <project path="build" name="platform_build" groups="pdk" remote="BeerGang" revision="kitkat" >
+    <project path="build" name="platform_build" groups="pdk" remote="v44" revision="kitkat" >
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
     <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -244,7 +256,7 @@
     <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
     <project path="external/zxing" name="platform/external/zxing" />
     <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-    <project path="frameworks/base" name="platform_frameworks_base" remote="BeerGang" revision="kitkat" />
+    <project path="frameworks/base" name="platform_frameworks_base" remote="v44" revision="kitkat" />
     <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
     <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
     <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -330,7 +342,7 @@
     <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
     <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
     <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-    <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="BeerGang" revision="kitkat"/>
+    <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="v44" revision="kitkat"/>
     <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
     <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
     <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -432,12 +444,19 @@
     <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
     <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
     <project path="vendor/lge" name="android_vendor_lge" remote="BeerGang" revision="kitkat" />
-    <project path="vendor/beergang" name="android_vendor_beergang" remote="BeerGang" revision="kitkat" />
+    <project path="vendor/beergang" name="android_vendor_beergang" remote="v44" revision="kitkat" />
     
     <!--Tmobile Themes-->
     <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="CyanogenMod" revision="cm-11.0" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="CyanogenMod" revision="cm-11.0" />
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="CyanogenMod" revision="cm-11.0" />
 
+    <!-- Moto Shit -->
+  <project name="Validus44/android_device_motorola_xt907" path="device/motorola/xt907" remote="github" revision="v44" />
+  <project name="CyanogenMod/android_device_motorola_qcom-common" path="device/motorola/qcom-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_motorola_msm8960-common" path="device/motorola/msm8960-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_kernel_motorola_msm8960-common" path="kernel/motorola/msm8960-common" remote="github" revision="cm-11.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="ls" revision="kitkat" />
+  <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="tm" revision="cm-11.0" />
     
 </manifest>
