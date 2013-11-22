@@ -1,9 +1,9 @@
 BeerKit
 Getting Started
 
-To get started with Android/BeerKit, you'll need to get familiar with Git and Repo.
+To get started with Validus44, you'll need to get familiar with Git and Repo.
 
-    repo init -u git://github.com/BeerGang/manifest.git -b kitkat
+    repo init -u git://github.com/Validus44/manifest.git -b kitkat
 
 Then to sync up:
 
